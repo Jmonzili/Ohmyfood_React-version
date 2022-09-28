@@ -1,0 +1,61 @@
+@import "../.././../styles/settings";
+
+.load {
+    @include flexbox-center;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 2;
+    opacity: 1;
+    animation: load-entrance 1s ease 3s 1 normal both;
+    .logo-principale {
+        font-family: 'Shrikhand', cursive;
+        font-size: 4rem;
+        color: $color-primary;
+        animation: pulse 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
+    }
+    &::after {
+        content: "";
+        border-right: 5px solid transparent;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        border-top: 5px solid $color-tertiary;
+        animation: circle 2s ease-in-out 0.5s infinite normal ;
+    }
+}
+
+//---------------------- Key frames ---------------
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+} 
+
+@keyframes circle {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes load-entrance {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(0);
+    }
+}

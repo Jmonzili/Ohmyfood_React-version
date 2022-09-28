@@ -1,12 +1,10 @@
-import React from "react";
-import "./loading-spinner.scss"
+import React from 'react';
+import './loading-logo.scss';
 
 const LoadingSpinner = () => {
   return (
-    <div className="spinner">
-      <div className="spinner__border">
-        <div className="spinner__center"></div>
-      </div>
+    <div class="load">
+      <h1 class="logo-principale">ohmyfood</h1>
     </div>
   );
 };
