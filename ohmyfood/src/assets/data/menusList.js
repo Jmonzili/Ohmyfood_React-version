@@ -13,17 +13,24 @@ const menusList = [
       },
       {
         type: 'entrées',
+        order: 2,
+        name: 'Foie gras de canard mi-cuit',
+        subtitle: 'Et ses copeaux de truffe noire',
+        price: 3500,
+      },
+      {
+        type: 'entrées',
         order: 3,
         name: 'Oeuf au plat',
         subtitle: 'Assaisonné à la truffe sur lit de caviar',
         price: 2000,
       },
       {
-        type: 'entrées',
-        order: 2,
-        name: 'Foie gras de canard mi-cuit',
-        subtitle: 'Et ses copeaux de truffe noire',
-        price: 3500,
+        type: 'plats',
+        order: 1,
+        name: 'Filet de boeuf aux herbes',
+        subtitle: 'Accompagné de sa ribambelle de légumes',
+        price: 4000,
       },
       {
         type: 'plats',
@@ -38,13 +45,6 @@ const menusList = [
         name: 'Filet de turbot',
         subtitle: 'Aux agrumes',
         price: 4400,
-      },
-      {
-        type: 'plats',
-        order: 1,
-        name: 'Filet de boeuf aux herbes',
-        subtitle: 'Accompagné de sa ribambelle de légumes',
-        price: 4000,
       },
       {
         type: 'desserts',
@@ -164,6 +164,13 @@ const menusList = [
         name: 'Homard et espuma de potiron',
         subtitle: "Mariné aux zestes d'orange",
         price: 2000,
+      },
+      {
+        type: 'entrées',
+        order: 4,
+        name: 'Foie gras de canard cuit entier',
+        subtitle: 'Confiture de figue et pain toasté',
+        price: 3500,
       },
       {
         type: 'plats',
